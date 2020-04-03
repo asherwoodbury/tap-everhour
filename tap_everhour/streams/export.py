@@ -7,7 +7,7 @@ class ExportStream(Stream):
 
     meta_fields = dict(
         key_properties=['time', 'date', 'user', 'task'],
-        replication_method='full',
+        replication_method='full_table',
         selected_by_default=True
     )
     schema = \
