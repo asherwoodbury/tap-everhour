@@ -24,8 +24,8 @@ class EverhourTap(TapExecutor):
             "X-Api-Key": self.config["X-Api-Key"]
         }
 
-    def get_res_data(res, key):
-        return [record for record in get_res_data(res)]
+    def get_res_data(self, res, key):
+        return [record for record in res.json()]
 
 def main():
     main_method(
