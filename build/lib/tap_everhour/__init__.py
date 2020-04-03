@@ -1,5 +1,4 @@
 from tap_kit import main_method, BaseClient, TapExecutor
-from tap_kit.utils import get_res_data
 from datetime import date
 from .streams import STREAMS
 import pendulum
@@ -23,9 +22,6 @@ class EverhourTap(TapExecutor):
         return {
             "X-Api-Key": self.config["X-Api-Key"]
         }
-
-    def get_res_data(res, key):
-        return [record for record in get_res_data(res)]
 
 def main():
     main_method(

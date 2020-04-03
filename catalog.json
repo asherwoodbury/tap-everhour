@@ -1,0 +1,142 @@
+{
+    "streams": [
+        {
+            "tap_stream_id": "export",
+            "selected": true,
+            "stream": "export",
+            "schema": {
+                "properties": {
+                    "time": {
+                        "type": "integer"
+                    },
+                    "timerTime": {
+                        "type": "integer"
+                    },
+                    "billable_time": {
+                        "type": "integer"
+                    },
+                    "date": {
+                        "type": "string"
+                    },
+                    "user": {
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "task": {
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "type": {
+                                "type": "string"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "iteration": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "number": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "table-key-properties": [
+                            "time",
+                            "date",
+                            "user",
+                            "task"
+                        ],
+                        "forced-replication-method": "full",
+                        "selected-by-default": true,
+                        "inclusion": "automatic",
+                        "schema-name": "export",
+                        "selected": true
+                    },
+                    "selected": true
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "time"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    },
+                    "selected": true
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "timerTime"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    },
+                    "selected": true
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "billable_time"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    },
+                    "selected": true
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "date"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    },
+                    "selected": true
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "user"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    },
+                    "selected": true
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "task"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    },
+                    "selected": true
+                }
+            ]
+        }
+    ]
+}
